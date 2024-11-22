@@ -350,9 +350,10 @@ a:visited {
   width: 100%;
   height: 300px;
   max-height: 33vh;
-  filter: brightness(75%);
+  filter: grayscale(1);
   background-image: url('../assets/images/banner.jpg');
   background-repeat: round;
+  mask-image: linear-gradient(90deg, #005A5B33 0%, #2C536433 50%, #0F202733 100%)
 }
 
 #banner-container {
@@ -659,7 +660,7 @@ blockquote {
 
 /* footer */
 .footer-top-banner {
-  background: $primary-color;
+  background: linear-gradient(90deg, #005A5B 0%, #2C5364 50%, #0F2027 100%);
   padding: 0.5rem 0;
   /* Centers everything in the banner. */
   text-align: center;
@@ -668,7 +669,7 @@ blockquote {
   color: #ffffff;
 }
 .footer-banner-wrapper {
-  padding: 2em;
+  padding: 1em;
   display: inline-flex;
   align-items: center;
   justify-content: center;
