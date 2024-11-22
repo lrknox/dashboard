@@ -6,6 +6,7 @@ on:
       - '_explore/scripts/requirements.txt'
     tags-ignore:
       - '*'
+  workflow_dispatch:
 
 jobs:
 
