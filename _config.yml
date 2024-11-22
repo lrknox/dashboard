@@ -66,13 +66,14 @@ defaults:
 permalink: pretty
 
 exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
   - build
   - public
   - CNAME
   - CONTRIBUTING.md
   - convert-to-gh-pages.sh
-  - Gemfile
-  - Gemfile.lock
   - Makefile
   - README.md
   - setup.cfg
