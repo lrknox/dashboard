@@ -15,7 +15,7 @@ function draw_pie_repos(areaID) {
 
   // Draw graph from data
   function drawGraph(data, areaID) {
-    var graphHeader = 'ORNL Repositories';
+    var graphHeader = 'Member Repositories';
 
     data.forEach(function (d) {
       d.count = +d.count;
@@ -137,7 +137,7 @@ function draw_pie_repos(areaID) {
     var subTotal = repoSubset.size;
     var data = [
       { label: 'External Contributors', count: subTotal },
-      { label: 'Only ORNL Contributors', count: repoTotal - subTotal },
+      { label: 'Member Contributors', count: repoTotal - subTotal },
     ];
     return data;
   }

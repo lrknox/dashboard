@@ -1,6 +1,6 @@
 {
-  "name": "ornl.github.io",
-  "description": "Public home for ORNL software catalog",
+  "name": "corsa-center.github.io",
+  "description": "Public home for CASS software catalog",
   "license": null,
   "openSourceProject": 1,
   "governmentWideReuseProject": 1,
@@ -8,6 +8,6 @@
     "jekyll"
   ],
   "contact": {
-    "email": "software@ornl.gov"
+    "email": "info@corsa.center"
   }
 }

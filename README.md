@@ -1,10 +1,8 @@
-# ORNL Software Catalog
+# CASS Software Catalog
 
 Original Author: Ian Lee <lee1001@llnl.gov>
 
-Welcome to the Oak Ridge National Laboratory software portal! The purpose of this software portal is to serve as a hub for open source software that is produced by Oak Ridge National Laboratory.
-
-ORNL produces software on a daily basis. Some of this software is used only internally, other components are licensed for use by external partners and collaborators, still other software is released, or even actively developed, in the open on software hosting platforms such as GitHub.com.
+Welcome to the CASS softaware catalog! The purpose of this catalog is to serve as a hub for open source software that is under the stewardship of CASS.
 
 ## Prerequisites
 
@@ -15,10 +13,10 @@ Before you begin, make sure you have working installs of Git, Ruby, and [Bundler
 To work locally, first clone into the repository:
 
 ```shell
-git clone https://code.ornl.gov/rse-public/ornl-software-catalog
+git clone https://github.com/corsa-center/software-catalog
 ```
 
-Make sure you are in the directory you just created by running `cd ornl-software-catalog` Then you can use `bundler` to install the Ruby dependencies (see the [Jekyll installation docs](https://jekyllrb.com/docs/installation/) for step-by-step guides to setting this up):
+Make sure you are in the directory you just created by running `cd software-catalog` Then you can use `bundler` to install the Ruby dependencies (see the [Jekyll installation docs](https://jekyllrb.com/docs/installation/) for step-by-step guides to setting this up):
 
 ```shell
 bundle install
@@ -44,9 +42,9 @@ For example, the default version of Ruby used to deploy GitHub Pages on github.c
 
 ## Contact
 
-If you have any questions, please don't hesitate to contact the catalog administrator (mailto:software@ornl.gov).
+If you have any questions, please don't hesitate to contact the catalog administrator (mailto:info@corsa.center).
 
-You can also find us on our mailing list: <software@ornl.gov>.
+You can also find us on our mailing list: <info@corsa.center>.
 
 # Release
 

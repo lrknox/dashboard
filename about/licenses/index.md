@@ -1,5 +1,5 @@
 ---
-title: ORNL Software Licensing
+title: Software Licensing
 layout: default
 ---
 
@@ -10,22 +10,18 @@ layout: default
 -   Table of Contents
     {:toc}
 
-_This page contains information meant for ORNL Employees with instructions for
+_This page contains information meant for projects with instructions for
 how to mark their source code projects. It is not intended to serve as legal
 advice._
 
-### Required Files
+### Best practices
 
-All ORNL software must contain the following files at the root of the source
+All software should contain the following files at the root of the source
 code repository:
 
 #### 1. README file
 
-All projects shall have a `README.md` file at the root of the repository.
-The `README.md` must contain the ORNL release number
-(`ORNL-CODE-XXXXXX`). We recommend putting it at the bottom in a section
-called "Release". See
-[this example](https://github.com/spack/spack#release).
+All projects should have a `README.md` file at the root of the repository.
 
 Additionally, we recommend that all projects have the following sections:
 
@@ -47,22 +43,9 @@ files in our [catalog]({{ '/' | relative_url }}), or take a look
 at this
 [simple README.md template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
 
-#### 2. NOTICE file
+#### 2. Open Source LICENSE file
 
-At the root of every source code repository shall be the following text in a
-file named `NOTICE`:
-
-```
-{% include_relative NOTICE %}
-```
-
-[Additional information](https://github.com/LLNL/.github/tree/main/community-health/NOTICE.md) about the Notice can be found in our LLNL/.github repo.
-
-#### 3. Open Source LICENSE file
-
-One of the following files must be included at the top level of your repository
-with the file name `LICENSE`. The only content which may be changed in the file
-is the copyright year.
+One of the following files should be included at the top level of your repository with the file name `LICENSE`. The only content which may be changed in the file is the copyright year.
 
 -   [Apache 2.0 License with LLVM Exception]({{'about/licenses/apache-2.0-llvm-exception.txt' | relative_url}})
 -   [Apache 2.0 License]({{'about/licenses/apache-2.0.txt' | relative_url}})
@@ -72,11 +55,7 @@ is the copyright year.
 -   [LGPL-2.1 License]({{'about/licenses/lgpl-2.1.txt' | relative_url}})
 -   [MIT License]({{'about/licenses/mit.txt' | relative_url}})
 
-If your repository was approved for release under a different open source
-license, the text of that license will be provided by the Innovation and
-Partnerships Office.
-
-If your project has more than one license, then you must include _all_ of
+If your project has more than one license, then you should include _all_ of
 the relevant licenses in your repository. We recommend that you name
 them with descriptive suffixes. For example, if your project is dual
 licensed under Apache-2.0 and MIT, you should have top-level
@@ -98,7 +77,8 @@ sections and determine whether they apply to your code.
 If you host your code publicly, you may receive contributions from
 outside the lab. You should consider documenting your contribution
 policies in your `README.md` or in a
-[`CONTRIBUTING.md` file](https://github.com/LLNL/.github/blob/main/community-health/CONTRIBUTING.md).
+`CONTRIBUTING.md` file.
+
 It is good practice to make the following details explicit:
 
 -   The license under which contributions should be made
@@ -107,14 +87,7 @@ It is good practice to make the following details explicit:
 With most open source projects, it is assumed that contributions are made
 under the _same_ license under which the project is distributed. For
 example, if you distribute your project under the `MIT` license,
-contributed code is assumed to be under that license as well. The
-[Cardioid](https://github.com/llnl/cardioid) project makes this explicit
-in its `README.md`:
-
-```
-Cardioid is distributed under the terms of the MIT license. All new
-contributions must be made under this license.
-```
+contributed code is assumed to be under that license as well.
 
 If you want to provide instructions to your users that they should follow
 when submitting code to your project, you can put these types of
@@ -136,8 +109,7 @@ SPDX provides a standard
 used to label code. To use SPDX identifiers in your project, you should
 find your license's short identifier in the list, and add a special
 `SPDX-License-Identifier` line to your `README.md`. For example, if your
-code is licensed under the `MIT` license like
-[Cardioid](https://github.com/llnl/cardioid), you would add this at the
+code is licensed under the `MIT` license, you would add this at the
 bottom of your README file:
 
 ```
@@ -217,7 +189,3 @@ add it to the repo by following these steps:
 -   Create a [CITATION file](https://citation-file-format.github.io/)
 -   Add it to the [README file](https://guides.github.com/activities/citable-code/)
 
-### Have Questions?
-
-If you still have questions or need more information, contact the
-[ORNL GitHub Admins](mailto:software@ornl.gov).

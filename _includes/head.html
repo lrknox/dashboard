@@ -10,6 +10,11 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" />
 
 <link rel="stylesheet" href="{{ 'css/main.css' | relative_url }}" media="screen" />
+<style>
+    .gradient {
+        background: linear-gradient(90deg, #005A5B 0%, #2C5364 50%, #0F2027 100%);
+    }
+</style>
 {% if page.css %}
   {% for css in page.css %}
     <link rel="stylesheet" href="{{ css | relative_url }}" media="screen" />

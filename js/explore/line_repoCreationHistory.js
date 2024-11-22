@@ -21,8 +21,8 @@ function draw_line_repoCreationHistory(areaID, repoNameWOwner) {
     var gitrelease = '2005-04-07';
     // GitHub founded
     var ghfounded = '2008-02-08';
-    // TODO replace this date with ORNL founded date
-    var sw_ornl = '2015-11-24';
+    // TODO replace this date with CASS founded date
+    var sw_cass = '2023-10-01';
 
     function addDateLine(dateString, label) {
       var dateObj = parseTime(dateString);
@@ -68,7 +68,7 @@ function draw_line_repoCreationHistory(areaID, repoNameWOwner) {
     );
     timerange.push(gitrelease);
     timerange.push(ghfounded);
-    timerange.push(sw_ornl);
+    timerange.push(sw_cass);
 
     // Get min-max values across both datasets
     var datrange = d3.extent(data, function (d) {
@@ -136,7 +136,7 @@ function draw_line_repoCreationHistory(areaID, repoNameWOwner) {
     // Draw reference date lines
     addDateLine(gitrelease, 'Git Released');
     addDateLine(ghfounded, 'GitHub Founded');
-    addDateLine(sw_ornl, 'ORNL Soft. Portal');
+    addDateLine(sw_cass, 'CASS Founded');
 
     // Add title
     chart

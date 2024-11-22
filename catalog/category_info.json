@@ -1,10 +1,10 @@
 {
   "data": {
-    "DATA SCIENCE & MACHINE LEARNING": {
-      "title": "DATA SCIENCE & MACHINE LEARNING",
+    "ARTIFICIAL INTELLIGENCE": {
+      "title": "ARTIFICIAL INTELLIGENCE",
       "icon": {
         "path": "/assets/images/categories/data-science-and-machine-learning.svg",
-        "alt": "Data Science & Machine Learning"
+        "alt": "Artificial Intelligence"
       },
       "description": {
         "short": "Domain-aware methods to ingest scientific knowledge and robust Machine Learning techniques that aid in simulation and automating scientific and engineering processes",
@@ -12,7 +12,6 @@
       },
       "topics": [
         "artificial-intelligence",
-        "data-wrangling",
         "evolutionary-algorithms",
         "intelligent-agents",
         "machine-learning",
@@ -22,11 +21,11 @@
         "text-analysis"
       ]
     },
-    "DATA MANAGEMENT": {
-      "title": "DATA MANAGEMENT",
+    "SCIENTIFIC DATA MANAGEMENT": {
+      "title": "SCIENTIFIC DATA MANAGEMENT",
       "icon": {
         "path": "/assets/images/categories/data-management.svg",
-        "alt": "Data Management"
+        "alt": "Scientific Data Management"
       },
       "description": {
         "short": "Robust systems which capture both the data and metadata needed for secure storage, searchability and harmonization throughout the data’s lifecycle",
@@ -40,8 +39,10 @@
         "in-situ-and-in-transit-workflows",
         "intelligent-data-management",
         "intelligent-automated-archives",
+        "knowlege-management",
         "portals",
-        "storage-and-io"
+        "storage-and-io",
+        "workflow-automation"
       ]
     },
     "DATA ANALYSIS & VISUALIZATION": {
@@ -70,99 +71,54 @@
         "visual-analytics"
       ]
     },
-    "USER DRIVEN SOFTWARE & SYSTEMS": {
-      "title": "USER DRIVEN SOFTWARE & SYSTEMS",
+    "PERFORMANCE & CORRECTNESS TOOLS": {
+      "title": "PERFORMANCE & CORRECTNESS TOOLS",
       "icon": {
-        "path": "/assets/images/categories/user-driven-software-and-systems.svg",
-        "alt": "User Driven Software & Systems"
+        "path": "/assets/images/categories/performance.svg",
+        "alt": "Performance & Correctness Tools"
       },
       "description": {
-        "short": "The interaction between humans and information in order to solve problems using software, systems, and technologies that must integrate seamlessly in order to provide an efficient and effective computational environment for scientific discovery and advancement",
+        "short": "Tools that can be applied to monitor, analyze, and diagnose performance and behavior of computational science applications and systems.",
         "long": ""
       },
       "topics": [
-        "adaptive-workflows",
-        "community-adoption",
+        "performance",
+        "correctness",
+        "autotuning",
+        "behavior"
+      ]
+    },
+    "PROGRAMMING SYSTEMS": {
+      "title": "PROGRAMMING SYSTEMS",
+      "icon": {
+        "path": "/assets/images/categories/programming-systems.svg",
+        "alt": "Programming Systems"
+      },
+      "description": {
+        "short": "Programming Systems are the first point of contact in human-computer interactions, and never ceased to evolve along with hardware and software technology",
+        "long": ""
+      },
+      "topics": [
         "compilers",
-        "informatics-systems",
-        "infrastructure-as-code",
-        "mathematical-tools",
-        "portals",
         "programming-languages",
-        "programming-models",
-        "resource-management",
-        "secure-cloud",
-        "software-engineering",
-        "standardization-efforts"
+        "programming-models"
       ]
     },
-    "ACCELERATED PERFORMANCE COMPUTING": {
-      "title": "ACCELERATED PERFORMANCE COMPUTING",
+    "MATH & PHYSICS LIBRARIES": {
+      "title": "MATH & PHYSICS LIBRARIES",
       "icon": {
-        "path": "/assets/images/categories/accelerated-performance-computing.svg",
-        "alt": "Accelerated Performance Computing"
+        "path": "/assets/images/categories/math.svg",
+        "alt": "Math & Physics Libraries"
       },
       "description": {
-        "short": "Energy efficient, high performance, reliable and small form factor architectures, which are augmented with more advanced programming models, compilers, and performance analysis and modeling techniques, intelligent run-time resource managers and operating systems",
+        "short": "Robust mathematical techniques and numerical algorithms to reliably address the challenges of large-scale simulation of complex physical phenomena",
         "long": ""
       },
       "topics": [
-        "accelerators",
-        "hardware-evaluation-and-design",
-        "heterogeneous-computing",
-        "neuromorphic-computing",
-        "runtime-systems",
-        "emerging-technologies",
-        "high-performance-computing",
-        "high-performance-networking",
-        "performance-modeling-and-analysis",
-        "programming-models",
-        "quantum-computing",
-        "resource-management",
-        "storage-and-io"
-      ]
-    },
-    "FEDERATED & AUTONOMOUS SYSTEMS": {
-      "title": "FEDERATED & AUTONOMOUS SYSTEMS",
-      "icon": {
-        "path": "/assets/images/categories/federated-and-autonomous-systems.svg",
-        "alt": "Federated and Autonomous Systems"
-      },
-      "description": {
-        "short": "Systems that allow interoperability and information sharing between semi-autonomous or fully autonomous de-centrally organized information technology systems and applications",
-        "long": ""
-      },
-      "topics": [
-        "code-coupling",
-        "communications-middleware",
-        "cyber-physical-and-iot",
-        "edge-computing",
-        "federated-computing",
-        "multi-physics-and-multiscale"
-      ]
-    },
-    "ALGORITHMIC INNOVATION": {
-      "title": "ALGORITHMIC INNOVATION",
-      "icon": {
-        "path": "/assets/images/categories/algorithmic-innovation.svg",
-        "alt": "Algorithmic Innovation"
-      },
-      "description": {
-        "short": "Innovative algorithms for solving large-scale scientific and engineering problems on advanced computer architecture",
-        "long": ""
-      },
-      "topics": [
-        "algorithm-optimization",
-        "discrete-simulation",
-        "evolutionary-algorithms",
-        "graph-algorithms",
-        "high-order-approximation-models",
-        "integration-of-data-and-simulation",
-        "inverse-problems",
-        "multi-physics-and-multiscale",
-        "clustering",
-        "reduced-order-models",
-        "uncertainty-quantification"
+        "uncertanty-quatification",
+        "numerical-optimization",
+        "problam-discretization",
+        "algrebraic-systems"
       ]
     }
   }

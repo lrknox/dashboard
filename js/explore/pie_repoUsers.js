@@ -153,7 +153,7 @@ function draw_pie_repoUsers(areaID, repoNameWOwner) {
 
     var data = [
       { label: 'External Users', count: extTotal },
-      { label: 'ORNL Members', count: labTotal },
+      { label: 'Internal Users', count: labTotal },
     ];
     return data;
   }

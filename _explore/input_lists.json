@@ -1,41 +1,54 @@
 {
-    "https://code.ornl.gov": {
-        "apiEnvKey": "CODE_ORNL_GOV_API_TOKEN",
-        "memberOrgs": [],
-        "orgs": [
-            "rse",
-            "rse-deployment",
-            "sns-hfir-scse",
-            "ssd"
-        ],
-        "repoType": "gitlab",
-        "repos": []
-    },
     "https://github.com": {
         "apiEnvKey": "GITHUB_API_TOKEN",
-        "memberOrgs": [
-            "ornl"
-        ],
-        "orgs": [
-            "mcvine",
-            "neutrons",
-            "ornl",
-            "ornl-btric",
-            "ornl-cees",
-            "ornl-fusion",
-            "ornl-sava",
-            "ornl-techint",
-            "ornlcda"
-        ],
+        "memberOrgs": [],
+        "orgs": [],
         "repoType": "github",
         "repos": [
-            "arborx/arborx",
-            "codarcode/mgard",
+            "amrex-codes/amrex",
+            "anlsys/aml",
+            "ceed/libceed",
+            "darshan-hpc/darshan",
+            "deephyper/deephyper",
+            "diatomic/diy",
+            "dyninst/dyninst",
+            "e4s-project/e4s",
+            "ebugger/empirical-roofline-toolkit",
+            "flang-compiler/flang",
+            "hdfgroup/hdf5",
+            "hypre-space/hypre",
+            "icl-utk-edu/magma",
+            "icl-utk-edu/papi",
+            "kitware/paraview",
+            "kitware/vtk-m",
             "kokkos/kokkos",
+            "kokkos/kokkos-kernels",
+            "llnl/sundials",
+            "llnl/zfp",
+            "llvm/llvm-project",
+            "mfem/mfem",
+            "open-mpi/ompi",
             "ornladios/adios2",
-            "qmcpack/qmcpack",
-            "wdmapp/effis",
-            "ecp-copa/cabana"
+            "parallel-netcdf/pnetcdf",
+            "petsc/petsc",
+            "pghysels/strumpack",
+            "pmodels/mpich",
+            "sandialabs/albany",
+            "spack/spack",
+            "stanfordlegion/legion",
+            "trilinos/trilinos",
+            "uo-oaciss/tau2",
+            "visit-dav/visit",
+            "xiaoyeli/superlu_dist"
+        ]
+    },
+    "https://gitlab.com": {
+        "apiEnvKey": "GITLAB_API_TOKEN",
+        "memberOrgs": [],
+        "orgs": [],
+        "repoType": "gitlab",
+        "repos": [
+            "hpctoolkit"
         ]
     }
 }

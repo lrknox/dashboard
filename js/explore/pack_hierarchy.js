@@ -229,7 +229,7 @@ function draw_pack_hierarchy(areaID) {
     }
 
     // Data for legend
-    const labels = ['External Contributors', 'Internal Contributors', 'Repositories', 'GitHub Organizations', 'ORNL'];
+    const labels = ['External Contributors', 'Internal Contributors', 'Repositories', 'GitHub Organizations'];
 
     // Creates legend
     const legend = chart.append('g');
@@ -293,7 +293,7 @@ function draw_pack_hierarchy(areaID) {
 
   // Turn json obj into desired working data
   function reformatData(obj1, obj2) {
-    var data = { name: 'ORNL Organizations', children: [] };
+    var data = { name: 'Organizations', children: [] };
     for (var user in obj1['data']) {
       if (obj1['data'][user]['contributedLabRepositories'] === undefined) {
         continue;

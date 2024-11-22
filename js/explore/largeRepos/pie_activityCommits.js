@@ -277,13 +277,13 @@ function draw_pie_commits(areaID) {
   function reformatData(obj) {
     var data = [
       {
-        label: 'In Top Ten ORNL Repos',
+        label: 'In Top Ten Member Repos',
         count: totalCommits(
           obj,
           mostPopularRepositories.map((d) => `${d.owner}/${d.name}`),
         ),
       },
-      { label: 'In Other ORNL Repos', count: totalCommits(obj) },
+      { label: 'In Other Member Repos', count: totalCommits(obj) },
       {
         labels: mostPopularRepositories.map((d) => `${d.owner}/${d.name}`),
         counts: mostPopularRepositories.map((d) => totalCommits(obj, [`${d.owner}/${d.name}`])),

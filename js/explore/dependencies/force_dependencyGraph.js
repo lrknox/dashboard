@@ -8,7 +8,7 @@ function draw_force_graph(areaID, adjacentAreaID) {
 
   // Draws graph
   function drawGraph(data, areaID, adjacentAreaID) {
-    const graphHeader = 'ORNL Dependencies';
+    const graphHeader = 'Member Dependencies';
 
     const margin = { top: stdMargin.top, right: stdMargin.right / 2, bottom: stdMargin.bottom / 2, left: stdMargin.left / 2 },
       width = stdTotalWidth * 2 + 80 - margin.left - margin.right,
@@ -206,7 +206,7 @@ function draw_force_graph(areaID, adjacentAreaID) {
     });
 
     // Data for legend
-    const labels = ['ORNL Repositories with Dependencies', 'External Packages', 'Internal Packages'];
+    const labels = ['Member Repositories with Dependencies', 'External Packages', 'Internal Packages'];
 
     // Creates legend
     const legend = chart.append('g');
@@ -308,28 +308,28 @@ function draw_force_graph(areaID, adjacentAreaID) {
     options.normalView = {
       name: 'normalView',
       text: 'Repos connected to dependencies',
-      labels: ['ORNL Repositories with Dependencies', 'External Packages', 'Internal Packages'],
+      labels: ['Member Repositories with Dependencies', 'External Packages', 'Internal Packages'],
       languages: true,
       function: redraw,
     };
     options.simplifiedView = {
       name: 'simplifiedView',
       text: 'Repos connected by shared dependencies',
-      labels: ['ORNL Repositories with Dependencies', 'External Packages', 'Internal Packages'],
+      labels: ['Member Repositories with Dependencies', 'External Packages', 'Internal Packages'],
       languages: true,
       function: simplify,
     };
     options.orgView = {
       name: 'orgView',
       text: 'Organizations connected to dependency organizations',
-      labels: ['ORNL Organizations', 'External Package Organizations', 'ORNL Package Organizations'],
+      labels: ['Member Organizations', 'External Package Organizations', 'Member Package Organizations'],
       languages: false,
       function: organize,
     };
     options.simplifiedOrgView = {
       name: 'simplifiedOrgView',
       text: 'Organizations connected by shared dependencies',
-      labels: ['ORNL Organizations', 'External Package Organizations', 'ORNL Package Organizations'],
+      labels: ['Member Organizations', 'External Package Organizations', 'Member Package Organizations'],
       languages: false,
       function: simplifyOrganize,
     };

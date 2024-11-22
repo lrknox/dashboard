@@ -276,13 +276,13 @@ function draw_pie_lines(areaID) {
   function reformatData(obj) {
     var data = [
       {
-        label: 'In Top Ten ORNL Repos',
+        label: 'In Top Ten Member Repos',
         count: totalLines(
           obj,
           mostPopularRepositories.map((d) => `${d.owner}/${d.name}`),
         ),
       },
-      { label: 'In Other ORNL Repos', count: totalLines(obj) },
+      { label: 'In Other Member Repos', count: totalLines(obj) },
       {
         labels: mostPopularRepositories.map((d) => `${d.owner}/${d.name}`),
         counts: mostPopularRepositories.map((d) => totalLines(obj, [`${d.owner}/${d.name}`])),

@@ -38,7 +38,7 @@ run_with_docker() {
     docker rm $container_name || true
     docker run --rm --name $container_name \
       -e GITHUB_API_TOKEN="${GITHUB_API_TOKEN}" \
-      -e CODE_ORNL_GOV_API_TOKEN="${CODE_ORNL_GOV_API_TOKEN}" \
+      -e GITLABV_API_TOKEN="${GITLAB_API_TOKEN}" \
       -v "$PWD":/app \
       software-catalog:latest \
       bash -c "/app/_explore/scripts/MASTER.sh"

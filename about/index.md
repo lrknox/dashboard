@@ -1,5 +1,5 @@
 ---
-title: About the ORNL Software Portal
+title: About the CASS Software Catalog
 layout: default
 ---
 
@@ -12,14 +12,14 @@ layout: default
 
 **Collaboration fuels our culture.**
 
-Welcome to the Oak Ridge National Laboratory (ORNL) software portal&mdash;a hub for open source software (OSS) produced at the Lab.
+Welcome to the CASS Software Catalog&mdash;a hub for open source software (OSS) produced by projects under the stewardship of CASS.
 
 ### Contact
 
-Check out our [FAQ](faq). If you have other questions or would like to request a private repository, please don't hesitate to contact the [ORNL GitHub admins](mailto:software@ornl.gov).
+Check out our [FAQ](faq). If you have other questions please open an issue.
 
 Follow us on Twitter for up-to-date information about the latest developments!
 
 <div class="text-center">
-  <a href="https://twitter.com/{{site.twitter.username}}" class="twitter-follow-button" data-show-count="true">Follow @ORNL</a>
+  <a href="https://twitter.com/{{site.twitter.username}}" class="twitter-follow-button" data-show-count="true">Follow @CASS</a>
 </div>
