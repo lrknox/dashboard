@@ -19,15 +19,15 @@ set -euo pipefail
 
 ### branch name variables - customize these based on your own configurations ###
 
-readonly CHECKOUT_BRANCH="master"
-declare -a MERGE_BRANCHES=("dev" "main")
+readonly CHECKOUT_BRANCH="update"
+declare -a MERGE_BRANCHES=("main")
 
 readonly REPO_ROOT_PATH="../.."
 
 ### functions ###
 
 run_without_docker() {
-    ./MASTER.sh
+    ./UPDATE.sh
 }
 
 run_with_docker() {
@@ -38,10 +38,10 @@ run_with_docker() {
     docker rm $container_name || true
     docker run --rm --name $container_name \
       -e GITHUB_API_TOKEN="${GITHUB_API_TOKEN}" \
-      -e GITLABV_API_TOKEN="${GITLAB_API_TOKEN}" \
+      -e GITLAB_API_TOKEN="${GITLAB_API_TOKEN}" \
       -v "$PWD":/app \
       software-catalog:latest \
-      bash -c "/app/_explore/scripts/MASTER.sh"
+      bash -c "/app/_explore/scripts/UPDATE.sh"
     popd
 }
 

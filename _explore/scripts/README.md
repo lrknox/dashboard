@@ -15,7 +15,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Run the collection script
-./MASTER.sh
+./UPDATE.sh
 ```
 
 ## Cronjob
