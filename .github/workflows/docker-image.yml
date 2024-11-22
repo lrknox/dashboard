@@ -1,0 +1,19 @@
+name: Build docker image
+
+on:
+  push:
+    paths:
+      - '_explore/scripts/requirements.txt'
+    tags-ignore:
+      - '*'
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker build . --file worker.Dockerfile --tag software-catalog:$(date +%s)
