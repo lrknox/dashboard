@@ -4,26 +4,32 @@ on:
    workflow_dispatch:
 
 jobs:
-  run:
+  update:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4 
         with:
+          ref: ${{ vars.UPDATE_BRANCH }}
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
       - name: Run update script
         run:
-          ./_explore/scripts/cron.sh --docker
+          ./_explore/scripts/UPDATE.sh
       - name: Commit changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -a -m "Add changes"
-          git config push.default simple
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
-          
+          git commit -a --allow-empty -m "Ran collection scripts [AUTO-GENERATED]"
+          git push
+      - name: Merge changes into main branch
+        run: |
+          git fetch origin "${DEPLOY_BRANCH}:${DEPLOY_BRANCH}"
+          git checkout "${DEPLOY_BRANCH}"
+          git branch --set-upstream-to=origin/"${DEPLOY_BRANCH}" "${DEPLOY_BRANCH }"
+          git pull
+          git merge $UPDATE_BRANCH
+          git push --set-upstream origin "${DEPLOY_BRANCH}"
+        env:
+          DEPLOY_BRANCH: ${{ env.DEPLOY_BRANCH }}
+          UPDATE_BRANCH: ${{ env.UPDATE_BRANCH }}
