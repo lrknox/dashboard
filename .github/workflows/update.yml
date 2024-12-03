@@ -5,7 +5,7 @@ on:
 
 jobs:
   update:
-    runs-on: [self-hosted Linux x64]
+    runs-on: ubuntu-latest
     container: ornlpublic/cass-software-catalog:latest
     steps:
       - uses: actions/checkout@v4 
