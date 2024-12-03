@@ -6,7 +6,10 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
-    container: ornlpublic/cass-software-catalog:latest
+    container: 
+      image: ornlpublic/cass-software-catalog:latest
+      env:
+        GITHUB_API_KEY: ${{ env.GH_UPDATE_API_KEY }}
     steps:
       - uses: actions/checkout@v4 
         with:
@@ -26,7 +29,7 @@ jobs:
         run: |
           git fetch origin "${DEPLOY_BRANCH}:${DEPLOY_BRANCH}"
           git checkout "${DEPLOY_BRANCH}"
-          git branch --set-upstream-to=origin/"${DEPLOY_BRANCH}" "${DEPLOY_BRANCH }"
+          git branch --set-upstream-to=origin/"${DEPLOY_BRANCH}" "${DEPLOY_BRANCH}"
           git pull
           git merge $UPDATE_BRANCH
           git push --set-upstream origin "${DEPLOY_BRANCH}"
