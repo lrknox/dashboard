@@ -1,12 +1,12 @@
-name: Run Data Update
+name: Run data update
 
 on:
    workflow_dispatch:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
-
+    runs-on: [self-hosted Linux x64]
+    container: ornlpublic/cass-software-catalog:latest
     steps:
       - uses: actions/checkout@v4 
         with:
