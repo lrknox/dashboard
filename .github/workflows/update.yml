@@ -2,15 +2,10 @@ name: Run data update
 
 on:
    workflow_dispatch:
-
-permissions:
-  contents: write
   
 jobs:
   update:
     runs-on: ubuntu-latest
-#    container:
-#      image: ornlpublic/cass-software-catalog:latest
     steps:
       - uses: actions/checkout@v4 
         with:
@@ -28,13 +23,14 @@ jobs:
           GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit changes
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git commit -a --allow-empty -m "Ran collection scripts [AUTO-GENERATED]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add .
+          git commit --allow-empty -m "Ran collection scripts [AUTO-GENERATED]"
           git push
       - name: Merge changes into main branch
         run: |
-          git fetch origin "${DEPLOY_BRANCH}:${DEPLOY_BRANCH}"
+          git fetch origin "${DEPLOY_BRANCH}:${DEPLOY_BRANCH}"=
           git checkout "${DEPLOY_BRANCH}"
           git branch --set-upstream-to=origin/"${DEPLOY_BRANCH}" "${DEPLOY_BRANCH}"
           git pull
