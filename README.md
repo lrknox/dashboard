@@ -1,8 +1,8 @@
-# CASS Software Catalog
+# CORSA Sustainability Dashboard
 
 Original Author: Ian Lee <lee1001@llnl.gov>
 
-Welcome to the CASS softaware catalog! The purpose of this catalog is to serve as a hub for open source software that is under the stewardship of CASS.
+Welcome to the CORSA Sustainability Dashboard! The purpose of this dashboard is to showcase the sustainability activities of open source scientific software under the stewardship of CASS.
 
 ## Prerequisites
 
