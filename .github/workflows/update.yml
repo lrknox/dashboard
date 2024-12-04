@@ -29,11 +29,11 @@ jobs:
           git push
       - name: Merge changes into main branch
         run: |
-          git fetch origin "${DEPLOY_BRANCH}:${DEPLOY_BRANCH}"=
+          git fetch origin "${DEPLOY_BRANCH}:${DEPLOY_BRANCH}"
           git checkout "${DEPLOY_BRANCH}"
           git branch --set-upstream-to=origin/"${DEPLOY_BRANCH}" "${DEPLOY_BRANCH}"
           git pull
-          git merge $UPDATE_BRANCH
+          git merge "${UPDATE_BRANCH}"
           git push --set-upstream origin "${DEPLOY_BRANCH}"
         env:
           DEPLOY_BRANCH: ${{ env.DEPLOY_BRANCH }}
