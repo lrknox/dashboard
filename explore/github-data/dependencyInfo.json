@@ -2240,6 +2240,21 @@
                 "login": "emk"
             }
         },
+        "emmatyping/clang": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "clang",
+            "nameWithOwner": "emmatyping/clang",
+            "owner": {
+                "login": "emmatyping"
+            }
+        },
         "enarx/ciborium": {
             "languages": {
                 "nodes": [
@@ -2254,21 +2269,6 @@
             "owner": {
                 "isVerified": false,
                 "login": "enarx"
-            }
-        },
-        "ethanhs/clang": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "clang",
-            "nameWithOwner": "ethanhs/clang",
-            "owner": {
-                "login": "ethanhs"
             }
         },
         "executablebooks/MyST-Parser": {
@@ -4240,7 +4240,7 @@
             "languages": {
                 "nodes": [
                     {
-                        "color": "#563d7c",
+                        "color": "#663399",
                         "name": "CSS"
                     }
                 ]
