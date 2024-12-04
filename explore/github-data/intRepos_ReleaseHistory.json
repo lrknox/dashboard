@@ -4,6 +4,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "AMReX 24.12",
+                        "publishedAt": "2024-12-01T20:47:28Z",
+                        "tagName": "24.12"
+                    },
+                    {
                         "name": "AMReX 24.11",
                         "publishedAt": "2024-11-01T17:37:49Z",
                         "tagName": "24.11"
@@ -1288,6 +1293,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Kokkos v. 4.5.0",
+                        "publishedAt": "2024-11-25T19:23:06Z",
+                        "tagName": "4.5.00"
+                    },
+                    {
                         "name": "Kokkos v. 4.4.1",
                         "publishedAt": "2024-09-13T04:10:29Z",
                         "tagName": "4.4.01"
@@ -1414,6 +1424,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "4.5.00",
+                        "publishedAt": "2024-11-25T21:21:44Z",
+                        "tagName": "4.5.00"
+                    },
+                    {
                         "name": "4.4.01",
                         "publishedAt": "2024-09-13T15:36:57Z",
                         "tagName": "4.4.01"
@@ -1539,6 +1554,11 @@
         "llvm/llvm-project": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "LLVM 19.1.5",
+                        "publishedAt": "2024-12-03T11:59:39Z",
+                        "tagName": "llvmorg-19.1.5"
+                    },
                     {
                         "name": "LLVM 19.1.4",
                         "publishedAt": "2024-11-19T12:44:31Z",
