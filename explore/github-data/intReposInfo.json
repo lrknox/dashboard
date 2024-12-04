@@ -271,7 +271,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 1328
+                "totalCount": 1329
             },
             "url": "https://github.com/Kitware/ParaView"
         },
@@ -1004,7 +1004,7 @@
                 "totalCount": 365
             },
             "issues_Open": {
-                "totalCount": 173
+                "totalCount": 174
             },
             "languages": {
                 "totalCount": 15
@@ -1096,7 +1096,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 22
+                "totalCount": 23
             },
             "url": "https://github.com/icl-utk-edu/magma"
         },
@@ -1169,7 +1169,7 @@
                 "totalCount": 2604
             },
             "issues_Open": {
-                "totalCount": 408
+                "totalCount": 409
             },
             "languages": {
                 "totalCount": 8
@@ -1206,7 +1206,7 @@
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2019
+                "totalCount": 2020
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -1272,14 +1272,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 10541
+                "totalCount": 10542
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 54464
+                "totalCount": 54465
             },
             "issues_Open": {
-                "totalCount": 23948
+                "totalCount": 23949
             },
             "languages": {
                 "totalCount": 53
@@ -1307,10 +1307,10 @@
                 "totalCount": 4156
             },
             "pullRequests_Merged": {
-                "totalCount": 31825
+                "totalCount": 31833
             },
             "pullRequests_Open": {
-                "totalCount": 3450
+                "totalCount": 3455
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -1371,7 +1371,7 @@
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 1748
+                "totalCount": 1750
             },
             "url": "https://github.com/mfem/mfem"
         },
@@ -1695,7 +1695,7 @@
                 "totalCount": 315
             },
             "pullRequests_Open": {
-                "totalCount": 1
+                "totalCount": 2
             },
             "repositoryTopics": {
                 "totalCount": 3
@@ -1750,7 +1750,7 @@
                 "totalCount": 34036
             },
             "pullRequests_Open": {
-                "totalCount": 765
+                "totalCount": 767
             },
             "repositoryTopics": {
                 "totalCount": 10
@@ -1802,10 +1802,10 @@
                 "totalCount": 1053
             },
             "pullRequests_Merged": {
-                "totalCount": 7169
+                "totalCount": 7170
             },
             "pullRequests_Open": {
-                "totalCount": 64
+                "totalCount": 63
             },
             "repositoryTopics": {
                 "totalCount": 8
