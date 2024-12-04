@@ -1004,7 +1004,7 @@
                 "totalCount": 365
             },
             "issues_Open": {
-                "totalCount": 173
+                "totalCount": 174
             },
             "languages": {
                 "totalCount": 15
@@ -1169,7 +1169,7 @@
                 "totalCount": 2604
             },
             "issues_Open": {
-                "totalCount": 408
+                "totalCount": 409
             },
             "languages": {
                 "totalCount": 8
@@ -1272,11 +1272,11 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 10541
+                "totalCount": 10542
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 54464
+                "totalCount": 54465
             },
             "issues_Open": {
                 "totalCount": 23948
@@ -1307,10 +1307,10 @@
                 "totalCount": 4156
             },
             "pullRequests_Merged": {
-                "totalCount": 31825
+                "totalCount": 31829
             },
             "pullRequests_Open": {
-                "totalCount": 3450
+                "totalCount": 3453
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -1371,7 +1371,7 @@
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 1748
+                "totalCount": 1749
             },
             "url": "https://github.com/mfem/mfem"
         },
@@ -1750,7 +1750,7 @@
                 "totalCount": 34036
             },
             "pullRequests_Open": {
-                "totalCount": 765
+                "totalCount": 766
             },
             "repositoryTopics": {
                 "totalCount": 10
@@ -1802,10 +1802,10 @@
                 "totalCount": 1053
             },
             "pullRequests_Merged": {
-                "totalCount": 7169
+                "totalCount": 7170
             },
             "pullRequests_Open": {
-                "totalCount": 64
+                "totalCount": 63
             },
             "repositoryTopics": {
                 "totalCount": 8
