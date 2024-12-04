@@ -36,5 +36,5 @@ jobs:
           git merge "${UPDATE_BRANCH}"
           git push --set-upstream origin "${DEPLOY_BRANCH}"
         env:
-          DEPLOY_BRANCH: ${{ env.DEPLOY_BRANCH }}
-          UPDATE_BRANCH: ${{ env.UPDATE_BRANCH }}
+          DEPLOY_BRANCH: ${{ vars.DEPLOY_BRANCH }}
+          UPDATE_BRANCH: ${{ vars.UPDATE_BRANCH }}
