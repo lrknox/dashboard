@@ -9,7 +9,7 @@ repo_branch: "dev"
 # tree path varies based on github/gitlab repo, gitlab should be "-/tree"
 repo_tree_path: "tree"
 repo_blob_path: "blob"
-lab_name: "CORSA"
+lab_name: "CASS"
 
 ### SEO ###
 
