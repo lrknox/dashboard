@@ -1,4 +1,4 @@
-            {
+{
     "https://github.com": {
         "apiEnvKey": "GITHUB_API_TOKEN",
         "memberOrgs": [],
