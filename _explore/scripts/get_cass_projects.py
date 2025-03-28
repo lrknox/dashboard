@@ -59,7 +59,7 @@ if response.status_code == 200:
                                 part_after_url = part_after_url[:-1]
                             gitlab_list.append((part_after_url))
                             break
-                
+
                     # Sort the lists alphabetically by part_after_url
                     github_list.sort(key=lambda x: x[0])
                     gitlab_list.sort(key=lambda x: x[0])
