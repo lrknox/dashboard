@@ -6,51 +6,40 @@
         "repoType": "github",
         "repos": [
             "amrex-codes/amrex",
-            "alpine-dav/ascent",
-            "berkeleylab/caffeine",
-            "chip-spv/chipstar",
+            "anlsys/aml",
             "ceed/libceed",
             "darshan-hpc/darshan",
+            "deephyper/deephyper",
             "diatomic/diy",
             "dyninst/dyninst",
-            "ginkgo-project/ginkgo",
+            "e4s-project/e4s",
+            "ebugger/empirical-roofline-toolkit",
+            "flang-compiler/flang",
             "hdfgroup/hdf5",
             "hypre-space/hypre",
             "icl-utk-edu/magma",
             "icl-utk-edu/papi",
+            "kitware/paraview",
+            "kitware/vtk-m",
             "kokkos/kokkos",
             "kokkos/kokkos-kernels",
-            "kitware/vtk-m",
-            "libensemble/libensemble",
-            "llvm/llvm-project",
             "llnl/sundials",
             "llnl/zfp",
+            "llvm/llvm-project",
             "mfem/mfem",
-            "ornladios/adios2",
             "open-mpi/ompi",
-            "openaccusergroup/openaccv-v",
-            "openmp-validation-and-verification/openmp_vv",
-            "pmodels/mpich",
+            "ornladios/adios2",
             "parallel-netcdf/pnetcdf",
+            "petsc/petsc",
             "pghysels/strumpack",
-            "stanfordlegion/legion",
+            "pmodels/mpich",
+            "sandialabs/albany",
             "spack/spack",
+            "stanfordlegion/legion",
             "trilinos/trilinos",
             "uo-oaciss/tau2",
             "visit-dav/visit",
-            "xiaoyeli/superlu_dist",
-            "xiaoyeli/superlu",
-            "xiaoyeli/superlu_mt",
-            "xsdk-project"
-         ],
-        "non-CASS repos": [
-            "anlsys/aml",
-            "deephyper/deephyper",
-            "e4s-project/e4s",
-            "ebugger/empirical-roofline-toolkit",
-            "flang-compiler/flang",
-            "sandialabs/albany",
-            "xiaoyeli/superlu_dist"       
+            "xiaoyeli/superlu_dist"
         ]
     },
     "https://gitlab.com": {
@@ -59,8 +48,7 @@
         "orgs": [],
         "repoType": "gitlab",
         "repos": [
-            "hpctoolkit",
-            "petsc/petsc"
+            "hpctoolkit"
         ]
     }
 }
