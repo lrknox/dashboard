@@ -32,6 +32,13 @@ function runScript() {
     errorCheck "$1"
 }
 
+# Basic script run procedure but make it Spack
+function runSpackScript() {
+    echo "Run - $1"
+    spack python $1
+    ret=$?
+    errorCheck "$1"
+}
 
 # Check Python requirements
 runScript python_check.py
@@ -74,6 +81,8 @@ runScript get_repos_starhistory.py
 runScript get_repos_releases.py
 runScript get_repos_creationhistory.py
 
+# --- SPACK DEPENDENCY INFO ---
+runSpackScript get_spack_dependencies.py --input-list ../input_lists.json
 
 # RUN THIS LAST
 runScript build_yearlist.py  # Used in case of long term cumulative data
