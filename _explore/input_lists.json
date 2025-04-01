@@ -38,11 +38,7 @@
             "spack/spack",
             "trilinos/trilinos",
             "uo-oaciss/tau2",
-            "visit-dav/visit",
-            "xiaoyeli/superlu_dist",
-            "xiaoyeli/superlu",
-            "xiaoyeli/superlu_mt",
-            "xsdk-project"
+            "visit-dav/visit"
         ],
         "non-CASS repos": [
             "anlsys/aml",
@@ -59,8 +55,7 @@
         "orgs": [],
         "repoType": "gitlab",
         "repos": [
-            "hpctoolkit/hpctoolkit",
-            "petsc/petsc"
+            "hpctoolkit/hpctoolkit"
         ]
     }
 }

@@ -25,10 +25,9 @@ jobs:
     - name: Run script
       run: python ./_explore/scripts/get_cass_projects.py
   
-    - name: Check for changes
+    - name: Check for changes to input_lists.json
       run: |
-        git diff --exit-code
-        if [ $? -eq 0 ]; then
+        if git diff _explore/input_lists.json --exit-code; then
           echo "No changes to commit."
           echo "changes=false" >> $GITHUB_OUTPUT
         else
