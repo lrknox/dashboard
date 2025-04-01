@@ -27,7 +27,7 @@ jobs:
   
     - name: Check for changes to input_lists.json
       run: |
-        if git diff _explore/input_lists.json --exit-code; then
+        if git diff --exit-code _explore/input_lists.json; then
           echo "No changes to commit."
           echo "changes=false" >> $GITHUB_OUTPUT
         else
