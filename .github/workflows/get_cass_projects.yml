@@ -9,7 +9,7 @@ jobs:
   run-script:
     runs-on: ubuntu-latest
     outputs:
-          has_changes: ${{ steps.check-for-changes.outputs.has-changes }}
+          has-changes: ${{ steps.check-for-changes.outputs.has-changes }}
 
     steps:
     - name: Checkout repository
