@@ -46,9 +46,9 @@ jobs:
     if: ${{ needs.run-script.outputs.has-changes == 'true' }}
     steps:
     - name: List files in the repository
-        run: |
-          ls -l ${{ github.workspace }}
-          ls $GITHUB_WORKSPACE
+      run: |
+        ls -l ${{ github.workspace }}
+        ls $GITHUB_WORKSPACE
 
     - name: Commit changes
       run: |
