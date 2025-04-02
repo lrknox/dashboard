@@ -8,6 +8,8 @@ on:
 jobs:
   run-script:
     runs-on: ubuntu-latest
+    outputs:
+          has_changes: ${{ steps.check-for-changes.outputs.has-changes }}
 
     steps:
     - name: Checkout repository
@@ -26,12 +28,14 @@ jobs:
       run: python ./_explore/scripts/get_cass_projects.py
   
     - name: Check for changes to input_lists.json
+      id: check-for-changes
       run: |
         if git diff --exit-code _explore/input_lists.json; then
           echo "No changes to commit."
-          echo "changes=false" >> $GITHUB_OUTPUT
+          echo "has-changes=false" >> $GITHUB_OUTPUT
         else
-          echo "changes=true" >> $GITHUB_OUTPUT
+          echo "There are changes."
+          echo "has-changes=true" >> $GITHUB_OUTPUT
         fi
 
     # if changes
@@ -39,7 +43,7 @@ jobs:
     name: Commit Changes and Create PR
     needs: run-script
     runs-on: ubuntu-latest 
-    if: ${{ needs.run-script.outputs.changes == 'true' }}
+    if: ${{ needs.run-script.outputs.has-changes == 'true' }}
     steps:
     - name: Commit changes
       run: |
