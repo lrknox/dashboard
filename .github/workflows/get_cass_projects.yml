@@ -62,5 +62,5 @@ jobs:
           message: 'Committing new products found in CASS _software'
 
     - name: Create Pull Request
-      uses: peter-evans/create-pull-request
+      uses: peter-evans/create-pull-request@v7
 
