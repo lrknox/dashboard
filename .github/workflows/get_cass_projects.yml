@@ -45,10 +45,12 @@ jobs:
     runs-on: ubuntu-latest 
     if: ${{ needs.run-script.outputs.has-changes == 'true' }}
     steps:
-    - name: List files in the repository
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: List files in the workspace
       run: |
         ls -l ${{ github.workspace }}
-        ls $GITHUB_WORKSPACE
 
     - name: Commit changes
       run: |
