@@ -61,13 +61,6 @@ jobs:
           author_email: 41898282+github-actions[bot]@users.noreply.github.com
           message: 'Committing new products found in CASS _software'
 
-#    - name: Push changes
-#      uses: ad-m/github-push-action@master
-#      with:
-#        github_token: ${{ secrets.GITHUB_TOKEN }}
-#        branch: ${{ github.ref }}
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request
 
-    - name: create pull request
-      run: gh pr create -B base_branch -H branch_to_merge --title 'Merge branch_to_merge into base_branch' --body 'Created by Github action'
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
