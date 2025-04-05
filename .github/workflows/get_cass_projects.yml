@@ -39,7 +39,7 @@ jobs:
         fi
 
     - name: Commit changes
-      if ${{ steps.check-for-changes.outputs.has-changes == true }}
+      if: ${{ steps.check-for-changes.outputs.has-changes == true }}
       
     - uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4
       with:
@@ -48,7 +48,7 @@ jobs:
           message: 'Committing new products found in CASS _software'
 
     - name: Create Pull Request
-      if ${{ steps.check-for-changes.outputs.has-changes == true }}
+      if: ${{ steps.check-for-changes.outputs.has-changes == true }}
 
       uses: peter-evans/create-pull-request@v7
 
