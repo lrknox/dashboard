@@ -348,7 +348,8 @@
             "scientific-computing",
             "macos",
             "linux",
-            "hpsf"
+            "hpsf",
+            "windows"
         ],
         "website": "https://spack.io"
     },
