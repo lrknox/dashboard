@@ -8,8 +8,8 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a href="https://cass.community" id="logo" class="pull-left">
-        <img src="{{ 'assets/images/logos/cass-small-logo.png' | relative_url }}" alt="CASS" style="max-height: 50px;"/>
+      <a href="https://corsa.center" id="logo" class="pull-left">
+        <img src="{{ 'assets/images/logos/corsa-logo.png' | relative_url }}" alt="CASS" style="max-height: 50px;"/>
       </a>
     </div>
 
@@ -31,6 +31,7 @@
             {% endif %}><a class="navbar-normal" href="{{ 'explore' | relative_url }}">Explore</a>
           <div class="dropdown-content">
             <p><a class="navbar-normal" href="{{ 'explore/dependencies' | relative_url }}">Dependencies</a></p>
+            <p><a class="navbar-normal" href="{{ 'explore/spack-dependencies' | relative_url }}">Spack Dependencies</a></p>
             <p><a class="navbar-normal" href="{{ 'explore/popular-repos' | relative_url }}">Popular Repositories</a></p>
           </div>
         </li>
@@ -61,7 +62,3 @@
 
 <span id="forkongithub"><a alt="Fork me on GitHub" title="Fork me on GitHub" href="{{site.repo_url}}" target="_blank">Fork me on GitHub</a></span>
 
-<header style="background: linear-gradient(90deg, #005A5B 0%, #2C5364 50%, #0F2027 100%);" id="banner-container">
-  <div id="banner-img"></div>
-  <h1 class="banner-text">{{ site.name }}</h1>
-</header>

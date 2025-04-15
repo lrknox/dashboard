@@ -1,8 +1,8 @@
-# CASS Software Catalog
+# CORSA Sustainability Dashboard
 
 Original Author: Ian Lee <lee1001@llnl.gov>
 
-Welcome to the CASS softaware catalog! The purpose of this catalog is to serve as a hub for open source software that is under the stewardship of CASS.
+Welcome to the CORSA Sustainability Dashboard! The purpose of this dashboard is to showcase the sustainability activities of open source scientific software under the stewardship of CASS.
 
 ## Prerequisites
 
@@ -13,10 +13,10 @@ Before you begin, make sure you have working installs of Git, Ruby, and [Bundler
 To work locally, first clone into the repository:
 
 ```shell
-git clone https://github.com/corsa-center/software-catalog
+git clone https://github.com/corsa-center/dashboard
 ```
 
-Make sure you are in the directory you just created by running `cd software-catalog` Then you can use `bundler` to install the Ruby dependencies (see the [Jekyll installation docs](https://jekyllrb.com/docs/installation/) for step-by-step guides to setting this up):
+Make sure you are in the directory you just created by running `cd dashboard` Then you can use `bundler` to install the Ruby dependencies (see the [Jekyll installation docs](https://jekyllrb.com/docs/installation/) for step-by-step guides to setting this up):
 
 ```shell
 bundle install
@@ -42,7 +42,7 @@ For example, the default version of Ruby used to deploy GitHub Pages on github.c
 
 ## Contact
 
-If you have any questions, please don't hesitate to contact the catalog administrator (mailto:info@corsa.center).
+If you have any questions, please don't hesitate to contact the dashboard administrator (mailto:info@corsa.center).
 
 You can also find us on our mailing list: <info@corsa.center>.
 
