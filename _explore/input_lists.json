@@ -60,6 +60,7 @@
         "repoType": "gitlab",
         "repos": [
             "hpctoolkit/hpctoolkit",
+            "paraview/paraview",
             "petsc/petsc"
         ]
     }
