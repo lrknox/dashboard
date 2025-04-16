@@ -32,8 +32,8 @@ def extract_arbitrary_attributes(attr_name, object):
 
 def populate_package_info(packages):
     def extract_languages(pkg_cls):
+        languages = []
         deps = [x for i,j in pkg_cls.dependencies.items() for x,z in j.items()]
-        languages = [x for y in pkg_cls.languages.values() for x in y]
         if "python" in deps:
             languages.append("python")
         if "cmake" in deps:
@@ -44,6 +44,12 @@ def populate_package_info(packages):
             languages.append("rust")
         if "lua" in deps:
             languages.append("lua")
+        if "fortran" in deps:
+            languages.append("fortran")
+        if "cxx" in deps:
+            languages.append("cxx")
+        if "c" in deps:
+            languages.append("c")
         return languages
 
     def process_versions(pkg_versions):
@@ -84,7 +90,6 @@ def populate_package_info(packages):
             # v: dependencies
             for name, dep in v.items():
                 spec = dep.spec
-                comp = dep.spec.compiler
                 versions = process_versions(dep.spec.versions)
                 variants = process_variants(dep.spec.variants)
                 dep_flags = process_build_flags(spack.deptypes.flag_to_chars(dep.depflag))
@@ -93,7 +98,6 @@ def populate_package_info(packages):
                 languages = extract_languages(pkg)
 
                 dependent_conditions = {
-                    "compiler" : str(comp) if comp else "all",
                     "versions": versions,
                     "variants": variants,
                     "dep_flags": dep_flags,
@@ -102,7 +106,6 @@ def populate_package_info(packages):
                 }
 
                 dependency_conditions = {
-                    "compiler": str(k.compiler) if k.compiler else "all",
                     "versions": process_versions(k.versions),
                     "variants": process_variants(k.variants),
                     "dep_flags": dep_flags,
@@ -133,7 +136,11 @@ def read_input_list(input_file):
         package_manifest = json.loads(f.read())
     packages = []
     for qualified_repo in package_manifest["https://github.com"]["repos"]:
-        _, package = qualified_repo.split("/")
+        repo_pkg = qualified_repo.split("/")
+        if len(repo_pkg) > 1:
+            _, package = repo_pkg
+        else:
+            package = repo_pkg[0]
         if sr.PATH.exists(package):
             packages.append(package)
     return packages
