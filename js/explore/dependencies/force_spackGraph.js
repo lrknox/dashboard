@@ -925,28 +925,6 @@ function draw_force_graph(areaID, adjacentAreaID) {
             .text((d) => d);
       }
 
-      // COMPILERS
-      const compiler_options = [];
-      for (var lnk of tmpLinks) {
-        compiler_options.push(lnk["condition"]["compiler"]);
-      }
-      const uniq_compilers = [...new Set(compiler_options)];
-      value_count = value_count + uniq_compilers.length;
-      if (uniq_compilers.length > 0) {
-        value_count = value_count + 1;
-
-        const compilers_group = variant_dropdown
-          .append("optgroup")
-            .attr('label', 'compiler');
-
-        compilers_group
-          .selectAll('option')
-          .data(uniq_compilers)
-          .join('option')
-            .attr('value', (d) => d)
-            .text((d) => d);
-      }
-
       // DEPS
       var dep_options = [];
       for (var lnk of tmpLinks) {
