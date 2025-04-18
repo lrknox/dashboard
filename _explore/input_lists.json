@@ -20,7 +20,6 @@
             "sandialabs/albany"
         ],
         "orgs": [],
-        "repoType": "github",
         "repos": [
             "amrex-codes/amrex",
             "alpine-dav/ascent",
@@ -69,6 +68,7 @@
         "repoType": "gitlab",
         "repos": [
             "hpctoolkit/hpctoolkit",
+            "paraview/paraview",
             "paraview/paraview",
             "petsc/petsc"
         ]
