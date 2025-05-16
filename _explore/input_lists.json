@@ -32,8 +32,6 @@
             "openaccusergroup/openaccv-v",
             "openmp-validation-and-verification/openmp_vv",
             "pmodels/mpich",
-            "parallel-netcdf/pnetcdf",
-            "pghysels/strumpack",
             "stanfordlegion/legion",
             "spack/spack",
             "trilinos/trilinos",
