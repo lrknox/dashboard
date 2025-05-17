@@ -9,9 +9,7 @@
             "alpine-dav/ascent",
             "berkeleylab/caffeine",
             "chip-spv/chipstar",
-            "ceed/libceed",
             "darshan-hpc/darshan",
-            "diatomic/diy",
             "dyninst/dyninst",
             "ginkgo-project/ginkgo",
             "hdfgroup/hdf5",
@@ -23,18 +21,17 @@
             "kokkos/kokkos-kernels",
             "kitware/vtk-m",
             "libensemble/libensemble",
-            "llvm/llvm-project",
             "llnl/sundials",
             "llnl/zfp",
-            "mfem/mfem",
             "ornladios/adios2",
             "open-mpi/ompi",
             "openaccusergroup/openaccv-v",
             "openmp-validation-and-verification/openmp_vv",
             "pmodels/mpich",
+            "parallel-netcdf/pnetcdf",
+            "pghysels/strumpack",
             "stanfordlegion/legion",
             "spack/spack",
-            "trilinos/trilinos",
             "uo-oaciss/tau2",
             "visit-dav/visit",
             "xiaoyeli/superlu_dist",
@@ -57,8 +54,7 @@
         "orgs": [],
         "repoType": "gitlab",
         "repos": [
-            "hpctoolkit/hpctoolkit",
-            "petsc/petsc"
+            "hpctoolkit/hpctoolkit"
         ]
     }
 }
